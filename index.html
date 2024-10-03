@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube Clone</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+  <div id="container">
+    <div id="header-section">
+      <div id="dropdown">
+        <i class="fa-solid fa-bars" id="sidebar-content"></i>
+        <img id="logo" src="assets/logo2.png" alt="logo">
+      </div>
+      <div id="search-section">
+        <input type="text" placeholder="Search" id="search-input">
+        <button id="search-btn">
+          <img id="search-icon" src="assets/search.png">
+        </button>
+        <i class="fa-solid fa-microphone" id="voice- type"></i>
+      </div>
+      <div id="profile">
+        <i class="fa-solid fa-video"></i>
+        <i class="fa-regular fa-bell"></i>
+        <img src="https://reqres.in/img/faces/5-image.jpg">
+      </div>
+    </div>
+    <!------ Main Section  ----->
+    <div id="fix-search-bar">
+      <ul>
+        <li>All</li>
+        <li>Trailers</li>
+        <li>Mysteries</li>
+        <li>Music</li>
+        <li>Dramedy</li>
+        <li>Web Series</li>
+        <li>News</li>
+        <li>Vlogs</li>
+        <li>Hiking</li>
+        <li>Cooking</li>
+        <li>Ancient History</li>
+        <li>Cartoon</li>
+        <li>Recently uploaded</li>
+      </ul>
+    </div>
+    <div id="main-section">
+      <div id="sidebar">
+        <div class="sidebar-icon">
+          <i class="fa-solid fa-house"></i>
+          <p>Home</p>
+        </div>
+        <div class="sidebar-icon">
+          <i class="fa-solid fa-play"></i>
+          <p>Shorts</p>
+        </div>
+        <div class="sidebar-icon">
+          <i class="fa-brands fa-youtube"></i>
+          <p>Subscriptions</p>
+        </div>
+        <hr id="hr" class="hidden">
+        <div class="sidebar-icon" id="profile-details">
+          <div id="user">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <p>You</p>
+          <div class="hidden" id="angle-right">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div id="dropdown-you" class="hidden">
+          <ul>
+            <li><i class="fa-regular fa-user"></i><span>Your channel</span></li>
+            <li><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></li>
+            <li><i class="fa-regular fa-circle-play"></i><span>Playlists</span></li>
+            <li><i class="fa-solid fa-circle-play"></i><span>Your Video</span></li>
+            <li><i class="fa-brands fa-discourse"></i><span>Your Courses</span></li>
+            <li><i class="fa-regular fa-clock"></i><span>Watch later</span></li>
+            <li><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></li>
+          </ul>
+        </div>
+      </div>
+      <div id="video-section"></div>
+    </div>
+    <span id="more-result"></span>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
